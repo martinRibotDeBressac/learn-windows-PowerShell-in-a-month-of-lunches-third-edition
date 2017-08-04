@@ -1,25 +1,27 @@
-1. Run Update-Help and ensure that it completes without errors, so that you have a copy of the help on your local computer. You need an internet connection, and the shell needs to run under elevated privileges (which means Administrator must appear in the shell window’s title bar).
+1) Run Update-Help and ensure that it completes without errors, so that you have a copy of the help on your local computer. You need an internet connection, and the shell needs to run under elevated privileges (which means Administrator must appear in the shell window’s title bar).
+```powershell
+update-help
+```
+----------
+2) Windows-only: can you find any cmdlets capable of converting other cmdlets’ output into HTML?
+```powershell
+get-help *html*
+```
+output:
+```
+    NAME
+        ConvertTo-Html
 
-    update-help
-
-##############################
-
-2. Windows-only: can you find any cmdlets capable of converting other cmdlets’ output into HTML?
-
-    get-help *html*
-
-        NAME
-            ConvertTo-Html
-
-        SYNOPSIS
-            Converts Microsoft .NET Framework objects into HTML that can be displayed in a Web browser.
-
-##############################
-
-3. Partially Windows-only: are there any cmdlets that can redirect output into a file, or to a printer?
-
-    get-help *output*
-
+    SYNOPSIS
+        Converts Microsoft .NET Framework objects into HTML that can be displayed in a Web browser.
+```
+----------
+3) Partially Windows-only: are there any cmdlets that can redirect output into a file, or to a printer?
+```powershell
+get-help *output*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     Write-Output                      Cmdlet    Microsoft.PowerShell.U... Sends the specified objects to the next command in the pipeline. If the command is the last command in the pipeline, the objects are...
@@ -32,13 +34,14 @@
     SYNOPSIS
         Sends the specified objects to the next command in the pipeline. If the command is the last
         command in the pipeline, the objects are displayed in the console.
-
-##############################
-
-4. How many cmdlets are available for working with processes? (Hint: remember that cmdlets all use a singular noun.)
-
-    get-help *process*
-
+```
+----------
+4) How many cmdlets are available for working with processes? (Hint: remember that cmdlets all use a singular noun.)
+```powershell
+get-help *process*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     Debug-Process                     Cmdlet    Microsoft.PowerShell.M... Debugs one or more processes running on the local computer.
@@ -46,13 +49,14 @@
     Start-Process                     Cmdlet    Microsoft.PowerShell.M... Starts one or more processes on the local computer.
     Stop-Process                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running processes.
     Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for the processes to be stopped before accepting more input.
-
-##############################
-
-5. What cmdlet might you use to write to an event log? (This one’s possible on non-Windows operating systems, but you’ll get a different answer.)
-
-    get-help *eventlog*
-
+```
+----------
+5) What cmdlet might you use to write to an event log? (This one’s possible on non-Windows operating systems, but you’ll get a different answer.)
+```powershell
+get-help *eventlog*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     Clear-EventLog                    Cmdlet    Microsoft.PowerShell.M... Deletes all entries from specified event logs on the local or remote computers.
@@ -63,21 +67,25 @@
     Show-EventLog                     Cmdlet    Microsoft.PowerShell.M... Displays the event logs of the local or a remote computer in Event Viewer.
     Write-EventLog                    Cmdlet    Microsoft.PowerShell.M... Writes an event to an event log.
     about_Eventlogs                   HelpFile                            Windows PowerShell creates a Windows event log that is
-
-    get-help Write-EventLog
-
+```
+```powershell
+get-help Write-EventLog
+```
+output:
+```
     NAME
         Write-EventLog
 
     SYNOPSIS
         Writes an event to an event log.
-
-##############################
-
-6. You’ve learned that aliases are nicknames for cmdlets; what cmdlets are available to create, modify, export, or import aliases?
-
-    get-help *alias*
-
+```
+----------
+6) You’ve learned that aliases are nicknames for cmdlets; what cmdlets are available to create, modify, export, or import aliases?
+```powershell
+get-help *alias*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     Export-Alias                      Cmdlet    Microsoft.PowerShell.U... Exports information about currently defined aliases to a file.
@@ -87,33 +95,38 @@
     Set-Alias                         Cmdlet    Microsoft.PowerShell.U... Creates or changes an alias (alternate name) for a cmdlet or other command element in the current Windows PowerShell session.
     Alias                             Provider  Microsoft.PowerShell.Core Provides access to the Windows PowerShell aliases and the values that they represent.
     about_Aliases                     HelpFile                            Describes how to use alternate names for cmdlets and commands in Windows
-
-##############################
-
-7. Is there a way to keep a transcript of everything you type in the shell, and save that transcript to a text file?
-
-    get-help *transcript*
-
+```
+----------
+7) Is there a way to keep a transcript of everything you type in the shell, and save that transcript to a text file?
+```powershell
+get-help *transcript*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     Start-Transcript                  Cmdlet    Microsoft.PowerShell.Host Start-Transcript...
     Stop-Transcript                   Cmdlet    Microsoft.PowerShell.Host Stop-Transcript...
-
-    get-help Start-Transcript -detailed
-
+```
+```powershell
+get-help Start-Transcript -detailed
+```
+output:
+```
     -------------------------- EXAMPLE 2 --------------------------
 
         PS C:\>start-transcript -path c:\transcripts\transcript0.txt -noclobber
 
         This command starts a transcript in the Transcript0.txt file in C:\transcripts. The NoClobber parameter prevents any existing files from being overwritten. If the Transcript0.txt file already exists,
         the command fails.
-
-##############################
-
-8. Windows-only: it can take a long time to retrieve all of the entries from the Security event log. How can you get only the 100 most recent entries?
-
-    get-help Get-EventLog -Detailed
-
+```
+----------
+8) Windows-only: it can take a long time to retrieve all of the entries from the Security event log. How can you get only the 100 most recent entries?
+```powershell
+get-help Get-EventLog -Detailed
+```
+output:
+```
     NAME
         Get-EventLog
 
@@ -126,13 +139,15 @@
 
         This command gets the five most recent entries from the Application event log.
 
-    Change newest to 100 and logname to security
-
-##############################
-
-9. Windows-only: is there a way to retrieve a list of the services that are installed on a remote computer?
-
-    Get-Help *service*
+**Change newest to 100 and logname to security**
+```
+----------
+9) Windows-only: is there a way to retrieve a list of the services that are installed on a remote computer?
+```powershell
+Get-Help *service*
+```
+output:
+```
 
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -146,7 +161,7 @@
     Stop-Service                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running services.
     Suspend-Service                   Cmdlet    Microsoft.PowerShell.M... Suspends (pauses) one or more running services.
 
-    Get-Help Get-Service -Detailed
+Get-Help Get-Service -Detailed
 
     NAME
         Get-Service
@@ -161,13 +176,14 @@
         This command gets the services on the Server02 remote computer.
 
         Because the ComputerName parameter of Get-Service does not use Windows PowerShell remoting, you can use this parameter even if the computer is not configured for remoting in Windows PowerShell.
-
-##############################
-
+```
+----------
 10. Is there a way to see what processes are running on a remote computer? (You can find the answer on non-Windows operating systems, but the command itself might not work for you.)
-
-    get-help Get-Process -Detailed
-
+```powershell
+get-help Get-Process -Detailed
+```
+output:
+```
     NAME
         Get-Process
 
@@ -181,13 +197,14 @@
             Type the NetBIOS name, an IP address, or a fully qualified domain name of one or more computers. To specify the local computer, type the computer name, a dot (.), or "localhost".
 
             This parameter does not rely on Windows PowerShell remoting. You can use the ComputerName parameter of Get-Process even if your computer is not configured to run remote commands.
-
-##############################
-
-11. Examine the help file for the Out-File cmdlet. The files created by this cmdlet default to a width of how many characters? Is there a parameter that would enable you to change that width?
-
-    Get-Help Out-File -Detailed
-
+```
+----------
+11) Examine the help file for the Out-File cmdlet. The files created by this cmdlet default to a width of how many characters? Is there a parameter that would enable you to change that width?
+```powershell
+Get-Help Out-File -Detailed
+```
+output:
+```
     NAME
         Out-File
 
@@ -197,13 +214,14 @@
     -Width <Int32>
         Specifies the number of characters in each line of output. Any additional characters are truncated, not wrapped. If you omit this parameter, the width is determined by the characteristics of the host. The default for the
         Windows PowerShell console is 80 (characters).
-
-##############################
-
-12. By default, Out-File overwrites any existing file that has the same filename as what you specify. Is there a parameter that would prevent the cmdlet from overwriting an existing file?
-
-    Get-Help Out-File -Detailed
-
+```
+----------
+12) By default, Out-File overwrites any existing file that has the same filename as what you specify. Is there a parameter that would prevent the cmdlet from overwriting an existing file?
+```powershell
+Get-Help Out-File -Detailed
+```
+output:
+```
     NAME
         Out-File
 
@@ -213,13 +231,14 @@
     -NoClobber [<SwitchParameter>]
         Will not overwrite (replace the contents) of an existing file. By default, if a file exists in the specified path, Out-File overwrites the file without warning. If both Append and NoClobber are used, the output is appended
         to the existing file.
-
-##############################
-
-13. How could you see a list of all aliases defined in PowerShell?
-
-    get-help *alias*
-
+```
+----------
+13) How could you see a list of all aliases defined in PowerShell?
+```powershell
+get-help *alias*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     Export-Alias                      Cmdlet    Microsoft.PowerShell.U... Exports information about currently defined aliases to a file.
@@ -229,26 +248,33 @@
     Set-Alias                         Cmdlet    Microsoft.PowerShell.U... Creates or changes an alias (alternate name) for a cmdlet or other command element in the current Windows PowerShell session.
     Alias                             Provider  Microsoft.PowerShell.Core Provides access to the Windows PowerShell aliases and the values that they represent.
     about_Aliases                     HelpFile                            Describes how to use alternate names for cmdlets and commands in Windows
-
-    get-help Get-Alias
-
+```
+```powershell
+get-help Get-Alias
+```
+output:
+```
     NAME
         Get-Alias
 
     SYNOPSIS
         Gets the aliases for the current session.
 
-
-##############################
-
-14. Using both an alias and abbreviated parameter names, what is the shortest command line you could type to retrieve a list of running processes from a computer named Server1?
-
-    Get-Alias
-
+```
+----------
+14) Using both an alias and abbreviated parameter names, what is the shortest command line you could type to retrieve a list of running processes from a computer named Server1?
+```powershell
+Get-Alias
+```
+output:
+```
     Alias           ps -> Get-Process
-
-    Get-Help ps
-
+```
+```powershell
+Get-Help ps
+```
+output:
+```
     NAME
         Get-Process
 
@@ -258,15 +284,17 @@
 
     SYNTAX
         Get-Process [[-Name] <String[]>] [-ComputerName <String[]>] [-FileVersionInfo] [-Module] [<CommonParameters>]
-
-    ps -c Server1
-
-##############################
-
-15. How many cmdlets are available that can deal with generic objects? (Hint: remember to use a singular noun like object rather than a plural one like objects.)
-
-    get-help *object*
-
+```
+```powershell
+ps -c Server1
+```
+----------
+15) How many cmdlets are available that can deal with generic objects? (Hint: remember to use a singular noun like object rather than a plural one like objects.)
+```powershell
+get-help *object*
+```
+output:
+```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
     ForEach-Object                    Cmdlet    Microsoft.PowerShell.Core Performs an operation against each item in a collection of input objects.
@@ -283,15 +311,18 @@
     Tee-Object                        Cmdlet    Microsoft.PowerShell.U... Saves command output in a file or variable and also sends it down the pipeline.
     about_Objects                     HelpFile                            Provides essential information about objects in Windows PowerShell.
     about_Object_Creation             HelpFile                            Explains how to create objects in Windows PowerShell.
-
-##############################
-
-16. This chapter briefly mentioned arrays. What help topic could tell you more about them?
-
-    get-help *array*
+```
+----------
+16) This chapter briefly mentioned arrays. What help topic could tell you more about them?
+```powershell
+get-help *array*
+```
+output:
+```
     TOPIC
         about_Arrays
 
     SHORT DESCRIPTION
         Describes arrays, which are data structures designed to store
         collections of items.
+```
