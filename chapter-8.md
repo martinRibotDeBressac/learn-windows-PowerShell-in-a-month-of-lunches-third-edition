@@ -2,7 +2,7 @@
 ```powershell
 get-help *random*
 ```
-output:
+`output:`
 ```
 NAME
     Get-Random
@@ -14,7 +14,7 @@ SYNOPSIS
 ```powershell
 Get-Random
 ```
-output:
+`output:`
 ```
 826626686
 ```
@@ -25,7 +25,7 @@ output:
 ```powershell
 Get-Help *date*
 ```
-output:
+`output:`
 ```
 Name                              Category  Module                    Synopsis
 ----                              --------  ------                    --------
@@ -39,7 +39,7 @@ Update-TypeData                   Cmdlet    Microsoft.PowerShell.U... Updates th
 ```powershell
 get-date
 ```
-output:
+`output:`
 ```
 Thursday, 1 June 2017 2:04:25 PM
 ```
@@ -67,7 +67,7 @@ Monday
 ```powershell
     get-date | Select-Object -Property DayOfWeek
 ```
-output:
+`output:`
 ```
       DayOfWeek
       ---------

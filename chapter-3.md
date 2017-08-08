@@ -7,7 +7,7 @@ update-help
 ```powershell
 get-help *html*
 ```
-output:
+`output:`
 ```
     NAME
         ConvertTo-Html
@@ -20,7 +20,7 @@ output:
 ```powershell
 get-help *output*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -40,7 +40,7 @@ output:
 ```powershell
 get-help *process*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -55,7 +55,7 @@ output:
 ```powershell
 get-help *eventlog*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -71,7 +71,7 @@ output:
 ```powershell
 get-help Write-EventLog
 ```
-output:
+`output:`
 ```
     NAME
         Write-EventLog
@@ -84,7 +84,7 @@ output:
 ```powershell
 get-help *alias*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -101,7 +101,7 @@ output:
 ```powershell
 get-help *transcript*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -111,7 +111,7 @@ output:
 ```powershell
 get-help Start-Transcript -detailed
 ```
-output:
+`output:`
 ```
     -------------------------- EXAMPLE 2 --------------------------
 
@@ -125,7 +125,7 @@ output:
 ```powershell
 get-help Get-EventLog -Detailed
 ```
-output:
+`output:`
 ```
     NAME
         Get-EventLog
@@ -146,7 +146,7 @@ output:
 ```powershell
 Get-Help *service*
 ```
-output:
+`output:`
 ```
 
     Name                              Category  Module                    Synopsis
@@ -182,7 +182,7 @@ Get-Help Get-Service -Detailed
 ```powershell
 get-help Get-Process -Detailed
 ```
-output:
+`output:`
 ```
     NAME
         Get-Process
@@ -203,7 +203,7 @@ output:
 ```powershell
 Get-Help Out-File -Detailed
 ```
-output:
+`output:`
 ```
     NAME
         Out-File
@@ -220,7 +220,7 @@ output:
 ```powershell
 Get-Help Out-File -Detailed
 ```
-output:
+`output:`
 ```
     NAME
         Out-File
@@ -237,7 +237,7 @@ output:
 ```powershell
 get-help *alias*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -252,7 +252,7 @@ output:
 ```powershell
 get-help Get-Alias
 ```
-output:
+`output:`
 ```
     NAME
         Get-Alias
@@ -266,14 +266,14 @@ output:
 ```powershell
 Get-Alias
 ```
-output:
+`output:`
 ```
     Alias           ps -> Get-Process
 ```
 ```powershell
 Get-Help ps
 ```
-output:
+`output:`
 ```
     NAME
         Get-Process
@@ -293,7 +293,7 @@ ps -c Server1
 ```powershell
 get-help *object*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -317,7 +317,7 @@ output:
 ```powershell
 get-help *array*
 ```
-output:
+`output:`
 ```
     TOPIC
         about_Arrays

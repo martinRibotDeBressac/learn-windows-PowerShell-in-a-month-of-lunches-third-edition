@@ -33,7 +33,7 @@ New-Item -Name Test.txt -ItemType file
 ```powershell
 Set-Item .\Test.txt -Value TESTING
 ```
-output:
+`output:`
 ```
     Set-Item : Provider operation stopped because the provider does not support this operation.
     At line:1 char:1
@@ -52,7 +52,7 @@ Set-Location Env:
 ```powershell
 get-ChildItem *TEMP*
 ```
-output:
+`output:`
 ```
     Name                           Value
     ----                           -----

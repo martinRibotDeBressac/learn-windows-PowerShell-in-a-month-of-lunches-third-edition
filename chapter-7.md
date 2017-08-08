@@ -2,7 +2,7 @@
 ```powershell
 Get-Command *module*
 ```
-output:
+`output:`
 ```
 CommandType     Name                                               ModuleName
 -----------     ----                                               ----------
@@ -18,7 +18,7 @@ Cmdlet          Test-ModuleManifest                                Microsoft.Pow
 ```powershell
 Get-Module *troubleshoot* -ListAvailable
 ```
-output:
+`output:`
 ```
     Directory: C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 
@@ -35,7 +35,7 @@ Import-Module TroubleshootingPack
 ```powershell
 Get-Help Get-TroubleshootingPack -Detailed
 ```
-output:
+`output:`
 ```
 Example 1: Get a troubleshooting pack
 
@@ -46,7 +46,7 @@ Example 1: Get a troubleshooting pack
 ```powershell
 Get-TroubleshootingPack -Path C:\Windows\diagnostics\system\Networking
 ```
-output:
+`output:`
 ```
 Id                        Name                                     Publisher
 --                        ----                                     ---------
@@ -55,7 +55,7 @@ NetworkDiagnostics        Windows Network Diagnostics              Microsoft Win
 ```powershell
 Get-TroubleshootingPack -Path C:\Windows\diagnostics\system\Networking | Invoke-TroubleshootingPack
 ```
-output:
+`output:`
 ```
 Starting network diagnostics...
 

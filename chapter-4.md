@@ -13,7 +13,7 @@ Get-EventLog -Newest 100 -LogName Application
 ```powershell
 Get-Command -CommandType Cmdlet
 ```
-output:
+`output:`
 ```
     CommandType     Name                                               ModuleName
     -----------     ----                                               ----------
@@ -32,7 +32,7 @@ output:
 ```powershell
 Get-Alias
 ```
-output:
+`output:`
 ```
     CommandType     Name                                               ModuleName
     -----------     ----                                               ----------
@@ -70,7 +70,7 @@ Get-Service -Name M*
 ```powershell
 get-help *firewall*
 ```
-output:
+`output:`
 ```
     Name                              Category  Module                    Synopsis
     ----                              --------  ------                    --------
@@ -90,7 +90,7 @@ output:
 ```powershell
 Get-Help Get-NetFirewallRule
 ```
-output:
+`output:`
 ```
     NAME
         Get-NetFirewallRule
@@ -106,7 +106,7 @@ output:
 ```powershell
 Get-Help Get-NetFirewallRule -Detailed
 ```
-output:
+`output:`
 ```
     -Direction <Direction[]>
         Specifies that matching firewall rules of the indicated direction are retrieved.
