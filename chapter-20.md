@@ -1,3 +1,5 @@
+# Sessions: remote control with less work
+
 1) Close all open sessions in your shell.
 ```powershell
 Get-PSSession | Remove-PSSession

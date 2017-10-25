@@ -1,3 +1,5 @@
+# You call this scripting?
+
 1) The following command is for you to add to a script. You should first identify any elements that should be parameterized, such as the computer name. Your final script should define the parameter, and you should create comment-based help within the script. Run your script to test it, and use the Help command to make sure your -comment-based help works properly. Don’t forget to read the help files referenced within this chapter for more information. 
 
 Here’s the command:

@@ -1,3 +1,5 @@
+# Filtering and comparisons
+
 1) Import the NetAdapter module (available in the latest version of Windows, both client and server). Using the Get-NetAdapter cmdlet, display a list of nonvirtual network adapters (adapters whose Virtual property is False, which PowerShell represents with the special $False constant).
 ```powershell
     Import-Module NetAdapter

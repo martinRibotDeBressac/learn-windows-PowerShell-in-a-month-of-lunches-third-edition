@@ -1,3 +1,5 @@
+# Formatting—and why it’s done on the right
+
 1) Display a table of processes that includes only the process names, IDs, and whether they’re responding to Windows (the Responding property has that information). Have the table take up as little horizontal room as possible, but don’t allow any information to be truncated.
 ```powershell
 Get-Process | format-table -Property ProcessName,Id,Responding -AutoSize

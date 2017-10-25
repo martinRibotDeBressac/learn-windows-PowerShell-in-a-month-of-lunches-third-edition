@@ -1,3 +1,5 @@
+# Working with providers
+
 1) In the Registry, go to HKEY_CURRENT_USER\software\microsoft\Windows\-currentversion\explorer. Locate the Advanced key, and set its DontPrettyPath property to 1.
 ```powershell
 Set-Location HKCU:

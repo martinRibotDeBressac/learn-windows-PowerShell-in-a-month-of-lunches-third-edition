@@ -1,3 +1,5 @@
+# Variables: a place to store your stuff
+
 1) Create a background job that queries the Win32_BIOS information from two computers (use localhost twice if you have only one computer to experiment with).
 ```powershell
 start-job -ScriptBlock {Get-CimInstance -ClassName Win32_BIOS -ComputerName winserver,localhost}

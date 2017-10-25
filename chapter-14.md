@@ -1,3 +1,5 @@
+# Using Windows Management Instrumentation and CIM
+
 1) What class can you use to view the current IP address of a network adapter? Does the class have any methods that you could use to release a DHCP lease? (Hint: network is a good keyword here.)
 
 ```powershell

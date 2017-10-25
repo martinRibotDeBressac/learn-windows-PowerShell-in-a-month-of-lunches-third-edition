@@ -1,3 +1,5 @@
+# Using the help system
+
 1) Run Update-Help and ensure that it completes without errors, so that you have a copy of the help on your local computer. You need an internet connection, and the shell needs to run under elevated privileges (which means Administrator must appear in the shell window’s title bar).
 ```powershell
 update-help

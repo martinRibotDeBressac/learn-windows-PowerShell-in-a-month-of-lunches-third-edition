@@ -1,3 +1,5 @@
+# Remote control: one-to-one, and one-to-many
+
 1) Make a one-to-one connection with a remote computer (or with localhost if you have only one computer). Launch Notepad.exe. What happens?
 
 ```powershell

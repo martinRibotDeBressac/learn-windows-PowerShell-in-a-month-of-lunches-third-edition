@@ -1,3 +1,5 @@
+# The pipeline, deeper
+
 1) Would the following command work to retrieve a list of installed hotfixes from all computers in the specified domain? Why or why not? Write an explanation, similar to the ones we provided earlier in this chapter.
 ```powershell
 Get-Hotfix -computerName (get-adcomputer -filter * | Select-Object -expand name)

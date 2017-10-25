@@ -1,3 +1,5 @@
+# The pipeline: connecting commands
+
 1) Create two similar, but different, text files. Try comparing them by using Diff. Run something like this: Diff -reference (Get-Content File1.txt) -difference (Get-Content File2.txt). If the files have only one line of text that’s different, the command should work.
 ```powershell
 diff -Reference (Get-Content .\File1.txt) -Difference (Get-Content .\File2.txt)

@@ -1,3 +1,5 @@
+# Input and output
+
 1) Use Write-Output to display the result of 100 multiplied by 10.
 ```powershell
 Write-Output (100 * 10)

@@ -1,3 +1,5 @@
+# Objects: data by another name
+
 1) Identify a cmdlet that produces a random number.
 ```powershell
 get-help *random*
