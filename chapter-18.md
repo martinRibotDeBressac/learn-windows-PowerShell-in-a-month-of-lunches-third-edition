@@ -5,16 +5,19 @@
 start-job -ScriptBlock {Get-CimInstance -ClassName Win32_BIOS -ComputerName winserver,localhost}
 ```
 
+---
 2) When the job finishes running, receive the results of the job into a variable.
 ```powershell
 $job = Receive-Job -Keep -Id 1
 ```
 
+---
 3) Display the contents of that variable.
 ```powershell
 $job
 ```
 
+---
 4) Export the variable’s contents to a CliXML file.
 ```powershell
 $job | Export-Clixml -Path C:\dev\biosfromvar.xml
