@@ -4,7 +4,7 @@
 ```powershell
 update-help
 ```
-----------
+---
 2) Windows-only: can you find any cmdlets capable of converting other cmdlets’ output into HTML?
 ```powershell
 get-help *html*
@@ -17,7 +17,7 @@ get-help *html*
     SYNOPSIS
         Converts Microsoft .NET Framework objects into HTML that can be displayed in a Web browser.
 ```
-----------
+---
 3) Partially Windows-only: are there any cmdlets that can redirect output into a file, or to a printer?
 ```powershell
 get-help *output*
@@ -37,7 +37,7 @@ get-help *output*
         Sends the specified objects to the next command in the pipeline. If the command is the last
         command in the pipeline, the objects are displayed in the console.
 ```
-----------
+---
 4) How many cmdlets are available for working with processes? (Hint: remember that cmdlets all use a singular noun.)
 ```powershell
 get-help *process*
@@ -52,7 +52,7 @@ get-help *process*
     Stop-Process                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running processes.
     Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for the processes to be stopped before accepting more input.
 ```
-----------
+---
 5) What cmdlet might you use to write to an event log? (This one’s possible on non-Windows operating systems, but you’ll get a different answer.)
 ```powershell
 get-help *eventlog*
@@ -81,7 +81,7 @@ get-help Write-EventLog
     SYNOPSIS
         Writes an event to an event log.
 ```
-----------
+---
 6) You’ve learned that aliases are nicknames for cmdlets; what cmdlets are available to create, modify, export, or import aliases?
 ```powershell
 get-help *alias*
@@ -98,7 +98,7 @@ get-help *alias*
     Alias                             Provider  Microsoft.PowerShell.Core Provides access to the Windows PowerShell aliases and the values that they represent.
     about_Aliases                     HelpFile                            Describes how to use alternate names for cmdlets and commands in Windows
 ```
-----------
+---
 7) Is there a way to keep a transcript of everything you type in the shell, and save that transcript to a text file?
 ```powershell
 get-help *transcript*
@@ -122,7 +122,7 @@ get-help Start-Transcript -detailed
         This command starts a transcript in the Transcript0.txt file in C:\transcripts. The NoClobber parameter prevents any existing files from being overwritten. If the Transcript0.txt file already exists,
         the command fails.
 ```
-----------
+---
 8) Windows-only: it can take a long time to retrieve all of the entries from the Security event log. How can you get only the 100 most recent entries?
 ```powershell
 get-help Get-EventLog -Detailed
@@ -143,7 +143,7 @@ get-help Get-EventLog -Detailed
 
 **Change newest to 100 and logname to security**
 ```
-----------
+---
 9) Windows-only: is there a way to retrieve a list of the services that are installed on a remote computer?
 ```powershell
 Get-Help *service*
@@ -179,7 +179,7 @@ Get-Help Get-Service -Detailed
 
         Because the ComputerName parameter of Get-Service does not use Windows PowerShell remoting, you can use this parameter even if the computer is not configured for remoting in Windows PowerShell.
 ```
-----------
+---
 10. Is there a way to see what processes are running on a remote computer? (You can find the answer on non-Windows operating systems, but the command itself might not work for you.)
 ```powershell
 get-help Get-Process -Detailed
@@ -200,7 +200,7 @@ get-help Get-Process -Detailed
 
             This parameter does not rely on Windows PowerShell remoting. You can use the ComputerName parameter of Get-Process even if your computer is not configured to run remote commands.
 ```
-----------
+---
 11) Examine the help file for the Out-File cmdlet. The files created by this cmdlet default to a width of how many characters? Is there a parameter that would enable you to change that width?
 ```powershell
 Get-Help Out-File -Detailed
@@ -217,7 +217,7 @@ Get-Help Out-File -Detailed
         Specifies the number of characters in each line of output. Any additional characters are truncated, not wrapped. If you omit this parameter, the width is determined by the characteristics of the host. The default for the
         Windows PowerShell console is 80 (characters).
 ```
-----------
+---
 12) By default, Out-File overwrites any existing file that has the same filename as what you specify. Is there a parameter that would prevent the cmdlet from overwriting an existing file?
 ```powershell
 Get-Help Out-File -Detailed
@@ -234,7 +234,7 @@ Get-Help Out-File -Detailed
         Will not overwrite (replace the contents) of an existing file. By default, if a file exists in the specified path, Out-File overwrites the file without warning. If both Append and NoClobber are used, the output is appended
         to the existing file.
 ```
-----------
+---
 13) How could you see a list of all aliases defined in PowerShell?
 ```powershell
 get-help *alias*
@@ -263,7 +263,7 @@ get-help Get-Alias
         Gets the aliases for the current session.
 
 ```
-----------
+---
 14) Using both an alias and abbreviated parameter names, what is the shortest command line you could type to retrieve a list of running processes from a computer named Server1?
 ```powershell
 Get-Alias
@@ -290,7 +290,7 @@ Get-Help ps
 ```powershell
 ps -c Server1
 ```
-----------
+---
 15) How many cmdlets are available that can deal with generic objects? (Hint: remember to use a singular noun like object rather than a plural one like objects.)
 ```powershell
 get-help *object*
@@ -314,7 +314,7 @@ get-help *object*
     about_Objects                     HelpFile                            Provides essential information about objects in Windows PowerShell.
     about_Object_Creation             HelpFile                            Explains how to create objects in Windows PowerShell.
 ```
-----------
+---
 16) This chapter briefly mentioned arrays. What help topic could tell you more about them?
 ```powershell
 get-help *array*

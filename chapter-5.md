@@ -10,7 +10,7 @@ Set-Location .\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 ```powershell
 Set-ItemProperty -Path .\Advanced -PSProperty DontPrettyPath -Value 1
 ```
-----------
+---
 
 2) Create a new directory called C:\Labs.
 ```powershell
@@ -20,7 +20,7 @@ Set-Location C:\
 New-Item -Name Labs -ItemType directory
 ```
 
-----------
+---
 
 3) Create a zero-length file named C:\Labs\Test.txt (use New-Item).
 ```powershell
@@ -29,7 +29,7 @@ Set-Location C:\Labs
 ```powershell
 New-Item -Name Test.txt -ItemType file
 ```
-----------
+---
 
 4. Is it possible to use Set-Item to change the contents of C:\Labs\Test.txt to TESTING? Or do you get an error? If you get an error, why?
 ```powershell
@@ -45,7 +45,7 @@ Set-Item .\Test.txt -Value TESTING
         + FullyQualifiedErrorId : NotSupported,Microsoft.PowerShell.Commands.SetItemCommand
 ```
 
-----------
+---
 
 5. Using the Environment provider, display the value of the system environment variable %TEMP%.
 ```powershell
@@ -60,7 +60,7 @@ get-ChildItem *TEMP*
     ----                           -----
     TEMP                           C:\Users\debressa\AppData\Local\Temp
 ```
-----------
+---
 
 6. What are the differences between the -Filter, -Include, and -Exclude parameters of Get-ChildItem?
 ```

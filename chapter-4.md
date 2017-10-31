@@ -4,12 +4,12 @@
 ```powershell
 get-process
 ```
-----------
+---
 2) Display the 100 most recent entries from the Application event log. (Don’t use Get-WinEvent for this. We’ve shown you another command that will do this task.) This is for Windows operating systems only.
 ```powershell
 Get-EventLog -Newest 100 -LogName Application
 ```
-----------
+---
 
 3) Display a list of all commands that are of the cmdlet type. (This is tricky—we’ve shown you Get-Command, but you’re going to have to read the help to find out how to narrow down the list as we’ve asked.)
 ```powershell
@@ -28,7 +28,7 @@ Get-Command -CommandType Cmdlet
     Cmdlet          Add-PSSnapin                                       Microsoft.PowerShell.Core
     Cmdlet          Add-Type                                           Microsoft.PowerShell.Utility
 ```
-----------
+---
 
 4) Display a list of all aliases.
 ```powershell
@@ -54,19 +54,19 @@ Get-Alias
     Alias           clv -> Clear-Variable
     Alias           cnsn -> Connect-PSSession
 ```
-----------
+---
 
 5) Make a new alias, so you can run np to launch Notepad from a PowerShell prompt. This is for Windows only unless you’ve installed wine on Linux.
 ```powershell
 New-Alias -Name np -Value Notepad
 ```
-----------
+---
 
 6) Display a list of services that begin with the letter M. Again, read the help for the necessary command—and don’t forget that the asterisk (*) is a near-universal wildcard in PowerShell. Note that this will work only on Windows operating -systems.
 ```powershell
 Get-Service -Name M*
 ```
-----------
+---
 
 7) Display a list of all Windows Firewall rules. You’ll need to use Help or Get-Command to discover the necessary cmdlet. Again, this will work only on Windows operating systems.
 ```powershell
@@ -102,7 +102,7 @@ Get-Help Get-NetFirewallRule
 
 
 ```
-----------
+---
 
 8) Display a list of all Windows Firewall rules. You’ll need to use Help or Get-Command to discover the necessary cmdlet. Again, this will work only on Windows operating systems.
 ```powershell
