@@ -62,5 +62,5 @@ Get-Process | Export-Csv process.csv -NoTypeInformation
 
 7) Windows maintains several regional settings, which include a default list separator. On U.S. systems, that separator is a comma. How can you tell Export-CSV to use the system’s default separator rather than a comma?
 ```powershell
-Get-Service | Export-Csv services.csv - UseCulture
+Get-Service | Export-Csv services.csv -UseCulture
 ```
